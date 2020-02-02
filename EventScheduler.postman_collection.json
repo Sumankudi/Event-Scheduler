@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "f6e11893-6e48-461d-9047-d011d29b9195",
+		"name": "EventScheduler",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All EvetTypes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create EventType - Interview",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "This request helps to create Event Type - Interview"
+			},
+			"response": []
+		},
+		{
+			"name": "Create EventType - Education",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "This request helps to create Event Types"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete EventType",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "To delete the existing event type"
+			},
+			"response": []
+		},
+		{
+			"name": "Schedule Event Interview",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"eventType\" : \"Interview\",\n\t\"email\" : \"attende@mail.com\",\n\t\"message\": \"Scheduling Java Interview\",\n\t\"scheduleStartTime\":\"2020-01-31T10:30:00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/event",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"event"
+					]
+				},
+				"description": "Request to Schedule the Event."
+			},
+			"response": []
+		},
+		{
+			"name": "Schedule Event for Education",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"eventType\" : \"Education\",\n\t\"email\" : \"attende@mail.com\",\n\t\"message\": \"Meeting for admission\",\n\t\"scheduleStartTime\":\"2020-01-31T10:30:00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/event",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"event"
+					]
+				},
+				"description": "Request to Schedule the Event."
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Scheduled event list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Scheduled event list for Event Owner",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update scheduled event status by Event Owner",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
